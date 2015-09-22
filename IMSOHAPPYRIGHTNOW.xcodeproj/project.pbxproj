@@ -12,6 +12,7 @@
 		B85C44131BB1BC3A005F24C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85C44111BB1BC3A005F24C2 /* Main.storyboard */; };
 		B85C44151BB1BC3A005F24C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85C44141BB1BC3A005F24C2 /* Assets.xcassets */; };
 		B85C44181BB1BC3A005F24C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85C44161BB1BC3A005F24C2 /* LaunchScreen.storyboard */; };
+		B85C44201BB1BCB1005F24C2 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C441F1BB1BCB1005F24C2 /* FaceView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B85C44141BB1BC3A005F24C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B85C44171BB1BC3A005F24C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B85C44191BB1BC3A005F24C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85C441F1BB1BCB1005F24C2 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		B85C440C1BB1BC3A005F24C2 /* IMSOHAPPYRIGHTNOW */ = {
 			isa = PBXGroup;
 			children = (
+				B85C441F1BB1BCB1005F24C2 /* FaceView.swift */,
 				B85C440D1BB1BC3A005F24C2 /* AppDelegate.swift */,
 				B85C440F1BB1BC3A005F24C2 /* ViewController.swift */,
 				B85C44111BB1BC3A005F24C2 /* Main.storyboard */,
@@ -90,6 +93,7 @@
 		B85C44021BB1BC3A005F24C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Justin Loew";
 				TargetAttributes = {
@@ -136,6 +140,7 @@
 			files = (
 				B85C44101BB1BC3A005F24C2 /* ViewController.swift in Sources */,
 				B85C440E1BB1BC3A005F24C2 /* AppDelegate.swift in Sources */,
+				B85C44201BB1BCB1005F24C2 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +253,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IMSOHAPPYRIGHTNOW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinloew.IMSOHAPPYRIGHTNOW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -259,10 +268,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IMSOHAPPYRIGHTNOW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinloew.IMSOHAPPYRIGHTNOW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -285,6 +297,7 @@
 				B85C441E1BB1BC3A005F24C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
