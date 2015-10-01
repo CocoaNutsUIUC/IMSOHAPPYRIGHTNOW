@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol FaceViewDataSource {
+protocol FaceViewDataSource : AnyObject {
 	func happinessAmountForFaceView(sender: FaceView) -> CGFloat
 }
 
 class FaceView: UIView {
 	
-	var happinessDataSource: FaceViewDataSource!
+	weak var happinessDataSource: FaceViewDataSource!
 	var scale: CGFloat = 0.90 {
 		// didSet is called every time the scale is set (after it has the new value)
 		didSet {
